@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tinta en Movimiento - Estudio</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="../Imagenes/icons8-herramienta-para-tatuajes-artesanales-32.png">
     <link rel="stylesheet" href="/CSS/css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,29 +16,37 @@
         <div class="header-content">
             <div class="logo">
                 <h1>Tinta<b>En</b>Movimiento</h1>
+            
+                <img src="../Imagenes/Logo Transp-Tinta -en -Movimiento.png" alt="">
             </div>
 
-            <div>
-                <img src="../Imagenes/Logo -Tinta -en -Movimiento.jpeg" alt="">
-            </div>
+            <div class="menu" id="show-menu">
             
             <div><nav>
                 <ul class="menu_display">
-                    <li><a href="../home.html">Home</a></li>
-                    <li>Estudio</li>
-                    <li><a href="equipo.html">Equipo</a></li>
-                    <li><a href="portafolio.html">Portafolio</a></li>
-                    <li><a href="cuidados.html">Cuidados</a></li>
-                    <li><a href="cotizador.html">Cotizador</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="../home.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li class="menu-selected"><a href="#" class="text-menu-selected"><i class="fa-solid fa-building"></i>Estudio</a></li>
+                    <li><a href="equipo.html"><i class="fa-solid fa-handshake"></i>Equipo</a></li>
+                    <li><a href="portafolio.html"><i class="fa-solid fa-images"></i>Portafolio</a></li>
+                    <li><a href="cuidados.html"><i class="fa-solid fa-user-nurse"></i>Cuidados</a></li>
+                    <li><a href="cotizador.html"><i class="fa-solid fa-calculator"></i>Cotizador</a></li>
+                    <li><a href="blog.html"><i class="fa-solid fa-blog"></i>Blog</a></li>
+                    <li><a href="contacto.html"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
                 </ul>
             </nav></div>
+            </div>
         </div>
+
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
     </header>
 
     <!------------------------------------------------------------------------------------------>
     <!--portada-->
+
+    <div class="container-all" id="move-content">
 
     <div class="container-cover">
         <div class="container-info-cover">
@@ -52,9 +61,10 @@
         <div>
             <article>
             
-                <h3>Nuestras instalaciones</h3>
+                <h1>Nuestras <b>instalaciones</b></h1>
                     
                 <p>Texto sobre el estudio</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate officia distinctio excepturi velit fugiat quisquam fuga, labore ipsum ex harum? Saepe, eum. Atque aperiam eligendi vero excepturi nostrum, quisquam facere!</p>
         
                 <img src="../Imagenes/Estudio/Estudio 2.jpg" alt="" class="imagenesEstudio">
                     
@@ -76,7 +86,7 @@
         <div>
             <section>
 
-                <h3>Nuestro trabajo</h3>
+                <h1>Nuestro <b>trabajo</b></h1>
 
                 <p>En nuestro estudio de tatuajes la pasión y el arte se fusionan para crear experiencias únicas. Localizados en el centro de la ciudad, somos un equipo de artistas apasionados que se dedican a transformar ideas en obras maestras sobre la piel. Con más de 20 años de experiencia y un serio compromiso con la calidad, nos enorgullece ser uno de los estudios más reconocidos y confiables de toda la región.</p>
 
@@ -99,7 +109,7 @@
     <div class="container-footer">
         <footer>
             <div class="logo-footer">
-                <img src="../Imagenes/Logo-Fuego.jpeg" alt="">
+                <img src="../Imagenes/Logo Transp-Tinta -en -Movimiento.png" alt="">
             </div>
             <div class="redes-footer">
                 <a href="" class="fa-brands fa-pinterest" alt="Contacto: Perfil de Pinterest"></a>
@@ -111,6 +121,9 @@
             <h4>© 2023   TintaEnMovimiento    -    Todos los Derechos Reservados</h4>
         </footer>
     </div>
+    </div>
+
+    <script src="/JS/menu.js"></script>
 
 </body>
 </html>

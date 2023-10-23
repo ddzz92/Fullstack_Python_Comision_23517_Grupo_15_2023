@@ -1,11 +1,9 @@
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family:  sans-serif;
 }
 
 body {background-color:#fff;}
@@ -77,9 +75,7 @@ a{
 a:hover{
     color: rgb(126, 124, 124);
 }
-
-/*----------Responsive Menu-----------*/
-
+/*----------responsive menu-----------*/
 .menu .text-menu-selected{
     color: #ee0808;
 
@@ -116,7 +112,7 @@ a:hover{
 
 .container-cover{
     width: 100%;
-    height: 500px;
+    height: 800px;
     position: relative;
     margin-top: 80px;
     background-image: url(../Imagenes/istockphoto-502456958-170667a.jpg);
@@ -126,8 +122,8 @@ a:hover{
 }
 
 .container-info-cover{
-    max-width: 800px;
-    height: 500px;
+    max-width: 1200px;
+    height: 800px;
     margin: auto;
     text-align: center;
     display: flex;
@@ -138,8 +134,9 @@ a:hover{
     z-index: 1;
 }
 
+
 .container-info-cover h1{
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 500;
     color: #fff;
     margin-bottom: 20px;
@@ -150,14 +147,35 @@ a:hover{
 }
 
 .container-info-cover p{
-    color: #fff;
-    font-size: 20px;
+    color: white;
+    font-size: 25px;
     font-weight: 300;
 
+}
+
+.container-info-cover b{
+    color: rgb(255, 37, 37);
 }
 /*--------------------------------------------------------------------------------------------*/
 /*Section main*/
 /*--Articulo--*/
+
+.main-Contacto {
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+.main-Blog {
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
 
 .main {
     width: 1200px;
@@ -165,6 +183,10 @@ a:hover{
     margin-top: 40px;
     display: flex;
     justify-content: center;
+}
+
+.main-Contacto article{
+    text-align: center;
 }
 
 article{
@@ -194,18 +216,37 @@ article h1{
     font-size: 40px;
 }
 
+article h1 a{
+    color: #000000;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+article h2{
+    color: black;
+}
+
 article h1 b{
     color: #ee0808;
 }
 
-article h3{
+.main article h3{
     margin-top: 20px;
     font-weight: 500;
     font-size: 40px;
     text-align: center;
+}
+
+article hr{
     color: #ee0808;
 }
 
+article ol li{
+    color: #ee0808;
+    margin: 20px;
+    font-size: 20px;
+}
 
 article p{
     margin-top: 20px;
@@ -213,35 +254,28 @@ article p{
     color: black;
 }
 
+article p b{
+    color: #ee0808;
+}
+
 article img{
     width: 100%;
-    height: 700px;
+    height: 500px;
     margin-top: 20px;
     border-radius: 10px;
-    
 }
 
 #formularioCotizador{
-    width: 100%;
-    height: 100%;
     text-align: center;
     padding: 5px;
     margin: 5px;
-    font-size: 20px;
 }
 
-#formularioCotizador select{
-    font-size: 20px;
-}
-
-#formularioCotizador input{
-    font-size: 20px;
-}
 #resultado{
     text-align: center;
     padding: 5px;
     margin: 5px;
-    font-size: 20px;
+    font-size: 2px;
 }
 
 .botonFormulario{
@@ -256,70 +290,191 @@ article img{
     border-radius: 10px;
 }
 
-/*--------------------------------------------------------------------------------------------*/
-/*Section*/
+/*----------------------------------------------------------------------*/
+/*Aside de los articulos relacionados*/
 
-.section {
-    width: 1200px;
-    margin: auto;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-}
-
-section{
-    width: 100%;
-    padding: 20px;
-    padding-bottom: 40px;
-    box-shadow: -10px 0 25px -10px black;
+.container-aside aside{
+    width: 320px;
+    box-shadow: 0 0 25px -10px black;
     border-radius: 6px;
-    position: relative;
     overflow: hidden;
-    background-color: rgb(187, 182, 177);
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
 }
 
-section:before{
-    content: '';
+.container-aside aside img{
     width: 100%;
-    height: 6px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgb(255, 37, 37);
 }
 
-section h1{
+.container-aside h2,
+.container-aside p{
     margin-top: 20px;
-    font-weight: 500;
-    font-size: 40px;
-
-}
-section h1 b{
-    color: #ee0808;
-}
-section p{
-    margin-top: 20px;
-    font-size: 20px;
+    padding: 0px 20px;
     color: black;
 }
 
-section img{                /* Ver que las imágenes queden bien */
-    width: 100%;
-    height: 600px;
+.container-aside aside button{
     margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: rgb(255, 37, 37);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
-section form{
-    font-size: 20px;
+.main-Blog .container-aside aside button:hover{
+    opacity: 0.9;
 }
 
-section input{
-    font-size: 20px;
+
+/*--------------------------------------------------------------------------------------------*/
+/*Section portafolio*/
+
+.section {
+    margin-top: 40px;
+    background-color: #000000;
+}
+
+
+.title{
+    text-align: center;
+    padding: 40px;
+    margin-top: 80px;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.title b{
+    color: #ee0808;
+}
+
+.container_slider{
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 800%;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cards img{
+    width: 100%;
+    height: 100%;
+    box-shadow: -0px 0 25px -0px black;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-17,
+#item-17:checked ~ .cards #selector-16,
+#item-16:checked ~ .cards #selector-15,
+#item-15:checked ~ .cards #selector-14,
+#item-14:checked ~ .cards #selector-13,
+#item-13:checked ~ .cards #selector-12,
+#item-12:checked ~ .cards #selector-11,
+#item-11:checked ~ .cards #selector-10,
+#item-10:checked ~ .cards #selector-9,
+#item-9:checked ~ .cards #selector-8,
+#item-8:checked ~ .cards #selector-7,
+#item-7:checked ~ .cards #selector-6,
+#item-6:checked ~ .cards #selector-5,
+#item-5:checked ~ .cards #selector-4,
+#item-4:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-17:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-4,
+#item-4:checked ~ .cards #selector-5,
+#item-5:checked ~ .cards #selector-6,
+#item-6:checked ~ .cards #selector-7,
+#item-7:checked ~ .cards #selector-8,
+#item-8:checked ~ .cards #selector-9,
+#item-9:checked ~ .cards #selector-10,
+#item-10:checked ~ .cards #selector-11,
+#item-11:checked ~ .cards #selector-12,
+#item-12:checked ~ .cards #selector-13,
+#item-13:checked ~ .cards #selector-14,
+#item-14:checked ~ .cards #selector-15,
+#item-15:checked ~ .cards #selector-16,
+#item-16:checked ~ .cards #selector-17{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3,
+#item-4:checked ~ .cards #selector-4,
+#item-5:checked ~ .cards #selector-5,
+#item-6:checked ~ .cards #selector-6,
+#item-7:checked ~ .cards #selector-7,
+#item-8:checked ~ .cards #selector-8,
+#item-9:checked ~ .cards #selector-9,
+#item-10:checked ~ .cards #selector-10,
+#item-11:checked ~ .cards #selector-11,
+#item-12:checked ~ .cards #selector-12,
+#item-13:checked ~ .cards #selector-13,
+#item-14:checked ~ .cards #selector-14,
+#item-15:checked ~ .cards #selector-15,
+#item-16:checked ~ .cards #selector-16,
+#item-17:checked ~ .cards #selector-17{
+    transform: translateX(0) scale(1);
+    z-index: 1;
 }
 
 /*-------------------------------------------------------------------------------------------*/
-/*--Section Comentarios--*/
-
+/*--Section Comentarios--*/ 
 .section-opiniones{
     width: 100%;
     margin: auto;
@@ -353,14 +508,14 @@ section input{
     background: rgb(255, 37, 37);
 }
 
-.container-comentarios h1 a{
+.container-comentarios h2 a{
     margin: 0;
     font-size: 30px;
     font-weight: 100;
     color:black;
 }
 
-.container-comentarios h1 b{
+.container-comentarios h2 b{
     color: #ee0808;
 }
 
@@ -377,7 +532,7 @@ section input{
     width: 400%;
     left: 0;
     padding-left: 0;
-    padding-top: 60px;
+    padding-top: 40px;
     overflow: hidden;
     list-style: none;
     position: relative;
@@ -387,7 +542,6 @@ section input{
 .slides li{
     width: 25%;
     height: 100%;
-    margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
@@ -543,6 +697,7 @@ h4 {
     color: #0ab835;
 }
 
+
 /*---------------------------------------------------------------------*/
 /*Responsive Design - adaptable a dispositivos moviles*/
 
@@ -558,6 +713,14 @@ h4 {
 
 @media screen and (max-width:1020px){
 
+    .section-opiniones{
+        width: 100%;
+        flex-direction: column;
+    }
+    .main-Blog{
+        width: 100%;
+        flex-direction: column;
+    }
     .main{
         width: 100%;
         flex-direction: column;   
@@ -574,11 +737,11 @@ h4 {
         margin: 10px;
 
     }
-    .section{ 
-        width: 100%;
-        flex-direction: column;
-
+    #formularioCotizador{
+        display: flex;
+        justify-content: center;
     }
+
 }
 
     @media screen and (max-width: 800px){
@@ -639,6 +802,12 @@ h4 {
         .container-aside{
             flex-wrap: wrap;
         }
+        .container-comentarios{
+            flex-wrap: wrap;
+        }
+        #formularioCotizador{
+            flex-wrap: wrap;
+        }
     }
 
     @media screen and (max-width: 510px){
@@ -651,21 +820,24 @@ h4 {
         .container-comentarios li p{
             padding-left: 0.5em;
             padding-right: 0.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+
         }
     
         .container-comentarios li q{
-            font-size: 1em;
+            font-size: 0.7em;
         }
     
         .container-comentarios li img{
-            width: 2em;
+            width: 1em;
             margin-left: -1em;
             margin-right: 0.25em;
         }
     
         .container-comentarios h2{
-            font-size: 20px;
+            font-size: 10px;
         }
     }
     
-
+    

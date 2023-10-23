@@ -167,6 +167,11 @@ a:hover{
     justify-content: center;
 }
 
+.main article{
+    text-align: center;
+}
+
+
 article{
     width: 100%;
     padding: 20px;

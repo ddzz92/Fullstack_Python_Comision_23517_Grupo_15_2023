@@ -167,6 +167,8 @@ a:hover{
     justify-content: center;
 }
 
+
+
 .main article{
     text-align: center;
 }
@@ -323,6 +325,129 @@ section form{
 
 section input{
     font-size: 20px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*Section Equipo*/
+
+.section-equipo {
+    margin-top: 40px;
+    background-color: #000000;
+}
+
+
+.title{
+    text-align: center;
+    padding: 40px;
+    margin-top: 80px;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.title b{
+    color: #ee0808;
+}
+
+.container_slideR{
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+
+}
+
+input[type=radiO]{
+    display: none;
+}
+
+.containeR{
+    width: 100%;
+    height: 100%;
+    max-width: 800%;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carDs{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.carD{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.carDs img{
+    width: 100%;
+    height: 100%;
+    box-shadow: -0px 0 25px -0px black;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.artista{
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.carDs .artista h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+#iteM-2:checked ~ .carDs #selectoR-1,
+#iteM-1:checked ~ .carDs #selectoR-6,
+#iteM-6:checked ~ .carDs #selectoR-5,
+#iteM-5:checked ~ .carDs #selectoR-4,
+#iteM-4:checked ~ .carDs #selectoR-3,
+#iteM-3:checked ~ .carDs #selectoR-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#iteM-6:checked ~ .carDs #selectoR-1,
+#iteM-1:checked ~ .carDs #selectoR-2,
+#iteM-2:checked ~ .carDs #selectoR-3,
+#iteM-3:checked ~ .carDs #selectoR-4,
+#iteM-4:checked ~ .carDs #selectoR-5,
+#iteM-5:checked ~ .carDs #selectoR-6{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#iteM-1:checked ~ .carDs #selectoR-1,
+#iteM-2:checked ~ .carDs #selectoR-2,
+#iteM-3:checked ~ .carDs #selectoR-3,
+#iteM-4:checked ~ .carDs #selectoR-4,
+#iteM-5:checked ~ .carDs #selectoR-5,
+#iteM-6:checked ~ .carDs #selectoR-6{
+    transform: translateX(0) scale(1);
+    z-index: 1;
 }
 
 /*-------------------------------------------------------------------------------------------*/

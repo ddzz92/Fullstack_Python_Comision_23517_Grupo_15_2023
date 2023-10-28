@@ -5,58 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tinta en Movimiento - Cotizador</title>
-    <link type="image/png" sizes="32x32" rel="icon" href="../Imagenes/icons8-herramienta-para-tatuajes-artesanales-32.png">
-    <link rel="stylesheet" href="/CSS/css-css.css">
+    <link type="image/png" sizes="32x32" rel="icon" href="/Imagenes/favicon.png">
+    <link rel="stylesheet" href="/CSS/css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Nosifer&family=Style+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!------------------------------------------------------------------------------------------>
-    <!--header - menu-->
+    
+    <!--Header - Menu-->
+    <!-------------------------------------------------------------------->
 
     <header>
         <div class="header-content">
             <div class="logo">
-                <h1>Tinta<b>En</b>Movimiento</h1>
-            
-                <img src="../Imagenes/Logo Transp-Tinta -en -Movimiento.png" alt="">
+                <h1>Tinta<b>En</b>Movimiento</h1>    
             </div>
 
             <div class="menu" id="show-menu">
             
-            <div><nav>
-                <ul class="menu_display">
-                    <li><a href="../home.html">Home</a></li>
-                    <li><a href="estudio.html">Estudio</a></li>
-                    <li><a href="equipo.html">Equipo</a></li>
-                    <li><a href="portafolio.html">Portafolio</a></li>
-                    <li><a href="cuidados.html">Cuidados</a></li>
-                    <li>Cotizador</li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav></div>
+                <div><nav>
+                    <ul class="menu_display">
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="estudio.html">Estudio</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                        <li><a href="portafolio.html">Portafolio</a></li>
+                        <li><a href="cuidados.html">Cuidados</a></li>
+                        <li>Cotizador</li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav></div>
+                
             </div>
-        </div>
 
-        <div id="icon-menu">
-            <i class="fa-solid fa-bars"></i>
+            <div id="icon-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </header>
 
-    <!------------------------------------------------------------------------------------------>
-    <!--portada-->
+    <!--Portada-->
+    <!-------------------------------------------------------------------->
 
     <div class="container-all" id="move-content">
 
     <div class="container-cover">
         <div class="container-info-cover">
-            <h1>COTIZADOR <b>TATTOO </b></h1>
+            <h2>Cotizador Tattoo</h2>
         </div>
     </div>
 
-    <!------------------------------------------------------------------------------------------>
-    <!--Section main-->
+    <!--Section Main-->
+    <!-------------------------------------------------------------------->
     
     <div class="main">
         <div>
@@ -68,8 +70,8 @@
                     Largo del tatuaje
                     <br>
                     <br>
-                    <select name="tamaño-largo">
-                    <option value="0">
+                    <select name="tamaño-largo" required>
+                    <option value="0" disabled selected>Selecciona una opción</option>
                     <option value="1">10 centímetros
                     <option value="2">15 centímetros
                     <option value="3">20 centímetros
@@ -81,8 +83,8 @@
                     Ancho del tatuaje
                     <br>
                     <br>
-                    <select name="tamaño-ancho">
-                    <option value="0">
+                    <select name="tamaño-ancho" required>
+                    <option value="0" disabled selected>Selecciona una opción</option>
                     <option value="1">10 centímetros
                     <option value="2">15 centímetros
                     <option value="3">20 centímetros
@@ -94,8 +96,8 @@
                     Colores a usar
                     <br>
                     <br>
-                    <select name="colores">
-                    <option value="0">
+                    <select name="colores" required>
+                    <option value="0" disabled selected>Selecciona una opción</option>
                     <option value="1">1 color
                     <option value="2">2 colores
                     <option value="3">3 colores
@@ -106,8 +108,8 @@
                     Marca de la tinta
                     <br>
                     <br>
-                    <select name="tinta">
-                    <option value="0">
+                    <select name="tinta" required>
+                    <option value="0" disabled selected>Selecciona una opción</option>
                     <option value="1">Dynamic
                     <option value="2">Element
                     <option value="3">Dragonhawk
@@ -117,8 +119,8 @@
                     Nivel de detalle
                     <br>
                     <br>
-                    <select name="detalle">
-                    <option value="0">
+                    <select name="detalle" required>
+                    <option value="0" disabled selected>Selecciona una opción</option>
                     <option value="1">Simple
                     <option value="2">Con algunos detalles
                     <option value="3">Con muchos detalles
@@ -135,17 +137,16 @@
                 <div id="resultado"></div>
 
             </article>
-    
         </div>
     </div>
 
-    <!------------------------------------------------------------------------------------------>   
-    <!--footer-->
+    <!--Footer-->
+    <!-------------------------------------------------------------------->   
 
     <div class="container-footer">
         <footer>
             <div class="logo-footer">
-                <img src="../Imagenes/Logo Transp-Tinta -en -Movimiento.png" alt="">
+                <img src="/Imagenes/logo_estudio.png" alt="Logo del estudio">
             </div>
             <div class="redes-footer">
                 <a href="" class="fa-brands fa-pinterest" alt="Contacto: Perfil de Pinterest"></a>
@@ -154,12 +155,10 @@
                 <a href="" class="fa-brands fa-whatsapp" alt="Contacto: Contacto de Whatsapp"></a>
             </div>
             <hr>
-            <h4>© 2023   TintaEnMovimiento    -    Todos los Derechos Reservados</h4>
+            <h5>© 2023   TintaEnMovimiento    -    Todos los Derechos Reservados</h5>
         </footer>
     </div>
-    </div>
-    <script src="/JS/menu.js"></script>
 
-<script src="../JS/js.js"></script>
+    <script src="../JS/js.js"></script>
 </body>
 </html>

@@ -356,6 +356,18 @@ article iframe{  /*blog*/
     font-size: 16px;
     font-weight: 300;
 }
+.contenido-flotante {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 180px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-family: 'Style Script', cursive;
+    border-radius: 6px;
+}
 
 /*-Aside de los articulos relacionados-*/
 /*--------------------------------------------------------------------*/

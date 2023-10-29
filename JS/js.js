@@ -68,12 +68,3 @@ formulario.addEventListener("submit", function (event) {
         resultadoElement.textContent = `El valor total es: $${valorTotal}`;
     }
 });
-
-// Función para el botón de la barra de Menú
-
-//document.getElementById("icon-menu").addEventListener("click", mostrar_menu);
-
-//function mostrar_menu(){
-//    document.getElementById("move-content").classList.toggle('move-container-all');
-//    document.getElementById("show-menu").classList.toggle('show-lateral');
-//}  

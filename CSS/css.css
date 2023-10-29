@@ -21,7 +21,7 @@ body {background-color:#fff;}
     line-height: 35px;
     border-radius: 50%;
     background-color: #000;
-    bottom: 40px;
+    bottom: 2%;
     animation-duration: 3s;
     animation-name: subida;
     animation-direction: alternate;
@@ -377,14 +377,15 @@ article iframe{  /*blog*/
 }
 .contenido-flotante {
     position: fixed;
-    top: 50%;
+    bottom: 2%;
     left: 0;
     width: 180px;
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
-    font-family: 'Style Script', cursive;
+    font-size: 14px;
+    font-family: 'Style Script', 'cursive';
     border-radius: 6px;
     z-index: 999;  /*Para que aparezca por encima de las imagenes*/
 }

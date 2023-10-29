@@ -386,6 +386,7 @@ article iframe{  /*blog*/
     text-align: center;
     font-family: 'Style Script', cursive;
     border-radius: 6px;
+    z-index: 999;  /*Para que aparezca por encima de las imagenes*/
 }
 
 /*-Aside de los articulos relacionados-*/

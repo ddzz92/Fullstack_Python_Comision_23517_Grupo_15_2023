@@ -110,9 +110,9 @@ a:hover{
 /*-Responsive Menu-*/
 /*--------------------------------------------------------------------*/
 
-.menu .text-menu-selected{
+/*.menu .text-menu-selected{
     color: #ff0000;
-}
+}*/
 .menu nav ul li a i{
     display: none;
 }
@@ -124,7 +124,7 @@ a:hover{
     top: 16px;
     padding: 10px;
     font-size: 20px;
-    background: #fff;
+    background: #f8f2f2;
     border-radius: 100%;
     color:#ff0000;
     display: none;
@@ -217,7 +217,7 @@ article{
 .main-Contacto article{  /*Usado en home*/
     text-align: center;
 }
-.main-Contacto  article hr{
+.main-Contacto article hr{
     color: #ff0000;
 }
 article:before{
@@ -346,7 +346,7 @@ article iframe{  /*blog*/
 }
 .container-eventos .eventos-img img{  /*blog*/
     width: 330px;
-    height: 360px;
+    height: 380px;
 }
 .container-eventos .eventos-img h4{  /*blog*/
     font-weight: 600;
@@ -463,6 +463,9 @@ section img{
 section form{
     font-size: 20px;
     text-align: center;
+}
+section textarea{
+    font-size: 20px;
 }
 section input{
     font-size: 20px;
@@ -897,9 +900,9 @@ input[type=radiO]{
         height: 50px;
         justify-content: flex-start;
     }
-    .menu-selected:before{
+    /*.menu-selected:before{
         width: 0;
-    }
+    }*/
     .menu nav ul li a {
         margin-top: 40px;
         color: #fff;
@@ -917,11 +920,11 @@ input[type=radiO]{
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 510px){
+/*@media screen and (max-width: 510px){
     .logo img{
         width: 0px;
     }
-}
+}*/
 @media screen and (max-width: 480px) {
     .container-comentarios li p{
         padding-left: 0.5em;

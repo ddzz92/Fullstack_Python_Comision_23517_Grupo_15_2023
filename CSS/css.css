@@ -931,7 +931,11 @@ input[type=radiO]{
     .container-aside{
         flex-wrap: wrap;
     }
-}
+    .container-info-cover h2{
+        font-size: 58px;
+        font-weight: 600;
+    }
+}   
 @media screen and (max-width: 480px) {
     .container-comentarios li p{
         padding-left: 0.5em;
@@ -951,6 +955,10 @@ input[type=radiO]{
     .contenido-flotante{
         display: none;
     }
+    .container-info-cover h2{
+        font-size: 48px;
+        font-weight: 500;
+    }   
 }
 
 /*-Galería de Imágenes-*/

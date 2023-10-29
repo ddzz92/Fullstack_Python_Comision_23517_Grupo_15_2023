@@ -852,6 +852,14 @@ input[type=radiO]{
 }
 
 /*--------------------------------------------------------------------*/
+@keyframes subida {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 /*Responsive Design - adaptable a dispositivos moviles*/
 
 @media screen and (max-width:1220px){

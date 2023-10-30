@@ -329,6 +329,7 @@ article p, section p {
     height: 400px;
     border-radius: 10px;
 }
+/*---------------------Zona BLOG-----------------------------*/
 article iframe{  /*blog*/
     width: 100%;
     margin-top: 40px;
@@ -389,7 +390,9 @@ article iframe{  /*blog*/
     border-radius: 6px;
     z-index: 999;  /*Para que aparezca por encima de las imagenes*/
 }
-
+#weather-data{
+    border-style: dotted;
+}
 /*-Aside de los articulos relacionados-*/
 /*--------------------------------------------------------------------*/
 
